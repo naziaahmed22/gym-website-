@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Projects | Sierra Solar Labs Nevada City</title>
+  <meta name="description" content="View our portfolio of solar panel installations and power backups in Nevada City, CA. Real performance data and project specifications.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo" id="logoLink">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          </svg>
+        </div>
+        Sierra Solar Labs
+      </a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="projects.html" class="nav-link active">Our Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+          <li><a href="contact.html" class="btn btn-primary" style="padding: 10px 20px;">Free Quote</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-toggle" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header-title">Our Completed Projects</h1>
+      <p class="page-header-desc">Explore real solar and battery installations powering homes and businesses across Nevada County.</p>
+    </div>
+  </section>
+
+  <!-- Projects Grid Section -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Filters -->
+      <div class="projects-filter-wrap fade-in-up">
+        <button class="filter-btn active" data-filter="all" id="filterBtnAll">All Projects</button>
+        <button class="filter-btn" data-filter="residential" id="filterBtnRes">Residential</button>
+        <button class="filter-btn" data-filter="commercial" id="filterBtnComm">Commercial</button>
+        <button class="filter-btn" data-filter="storage" id="filterBtnStore">Battery Backup</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="projects-grid fade-in-up">
+        
+        <!-- Project 1 -->
+        <div class="project-card" data-category="residential">
+          <div class="project-img-wrap">
+            <img src="assets/project_residential.png" alt="Historic Victorian Solar Installation" class="project-img">
+            <span class="project-category">Residential</span>
+          </div>
+          <div class="project-content">
+            <h3>Historic Victorian Restoration</h3>
+            <div class="project-location">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Broad Street, Nevada City
+            </div>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">An HLC-approved, low-profile solar installation on a historic 1890s Victorian home, preserving architectural charm while offsetting high utility rates.</p>
+            <div class="project-stats">
+              <div class="project-stat-box">
+                <div class="project-stat-val">8.4 kW</div>
+                <div class="project-stat-lbl">System Size</div>
+              </div>
+              <div class="project-stat-box">
+                <div class="project-stat-val">95%</div>
+                <div class="project-stat-lbl">Bill Offset</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="commercial">
+          <div class="project-img-wrap">
+            <img src="assets/project_commercial.png" alt="Nevada City Professional Offices Solar" class="project-img">
+            <span class="project-category">Commercial</span>
+          </div>
+          <div class="project-content">
+            <h3>Deer Creek Office Park</h3>
+            <div class="project-location">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Zion Street, Nevada City
+            </div>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">A high-efficiency commercial flat-roof ballast system helping local businesses lock in predictable overhead costs and protect against PG&E commercial rate hikes.</p>
+            <div class="project-stats">
+              <div class="project-stat-box">
+                <div class="project-stat-val">42.8 kW</div>
+                <div class="project-stat-lbl">System Size</div>
+              </div>
+              <div class="project-stat-box">
+                <div class="project-stat-val">$840/mo</div>
+                <div class="project-stat-lbl">Savings</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="storage">
+          <div class="project-img-wrap">
+            <img src="assets/hero_solar.png" alt="Tesla Powerwall Off-Grid Backup" class="project-img">
+            <span class="project-category">Storage</span>
+          </div>
+          <div class="project-content">
+            <h3>Banner Mountain Resiliency</h3>
+            <div class="project-location">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Banner Mountain, Nevada City
+            </div>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">A roof-mounted solar array coupled with dual Tesla Powerwalls, creating full home backup protection during high-wind winter storms and PSPS alerts.</p>
+            <div class="project-stats">
+              <div class="project-stat-box">
+                <div class="project-stat-val">27 kWh</div>
+                <div class="project-stat-lbl">Battery Capacity</div>
+              </div>
+              <div class="project-stat-box">
+                <div class="project-stat-val">12.2 kW</div>
+                <div class="project-stat-lbl">Solar Size</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="residential">
+          <div class="project-img-wrap">
+            <img src="assets/project_residential.png" alt="Mountain Craftsman Solar Installation" class="project-img">
+            <span class="project-category">Residential</span>
+          </div>
+          <div class="project-content">
+            <h3>Forest-Edge Craftsman</h3>
+            <div class="project-location">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Ridge Road, Nevada City
+            </div>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">Custom shading analysis allowed us to place this residential array in the optimal roof locations to clear the surrounding high pine canopy and maximize solar capture.</p>
+            <div class="project-stats">
+              <div class="project-stat-box">
+                <div class="project-stat-val">10.5 kW</div>
+                <div class="project-stat-lbl">System Size</div>
+              </div>
+              <div class="project-stat-box">
+                <div class="project-stat-val">99%</div>
+                <div class="project-stat-lbl">Bill Offset</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-category="commercial">
+          <div class="project-img-wrap">
+            <img src="assets/project_commercial.png" alt="Nevada County Agricultural Solar" class="project-img">
+            <span class="project-category">Commercial</span>
+          </div>
+          <div class="project-content">
+            <h3> Foothill Vineyards Solar</h3>
+            <div class="project-location">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Nevada City Foothills
+            </div>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">A heavy-duty ground-mount solar array powering agricultural irrigation systems and cooling sheds, bringing massive solar savings to local growers.</p>
+            <div class="project-stats">
+              <div class="project-stat-box">
+                <div class="project-stat-val">64.0 kW</div>
+                <div class="project-stat-lbl">System Size</div>
+              </div>
+              <div class="project-stat-box">
+                <div class="project-stat-val">4.2 Yrs</div>
+                <div class="project-stat-lbl">Payback Period</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" data-category="storage">
+          <div class="project-img-wrap">
+            <img src="assets/hero_solar.png" alt="Whole House Backup Battery Setup" class="project-img">
+            <span class="project-category">Storage</span>
+          </div>
+          <div class="project-content">
+            <h3>Coyote Street Off-Grid Cabin</h3>
+            <div class="project-location">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Coyote St, Nevada City
+            </div>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">A high-capacity, grid-tied hybrid battery backup storage solution protecting a home office from intermittent brownouts and power surges.</p>
+            <div class="project-stats">
+              <div class="project-stat-box">
+                <div class="project-stat-val">13.5 kWh</div>
+                <div class="project-stat-lbl">Capacity</div>
+              </div>
+              <div class="project-stat-box">
+                <div class="project-stat-val">6.8 kW</div>
+                <div class="project-stat-lbl">Solar Size</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+              </svg>
+            </div>
+            Sierra Solar Labs
+          </a>
+          <p class="footer-desc">Providing premium solar installation and storage options for Nevada City, Grass Valley, and surrounding Sierra Foothills communities since 2018.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="projects.html">Completed Projects</a></li>
+            <li><a href="contact.html">Get a Quote</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#residential">Residential Solar</a></li>
+            <li><a href="services.html#commercial">Commercial Solar</a></li>
+            <li><a href="services.html#storage">Battery Storage</a></li>
+            <li><a href="services.html#maintenance">System Maintenance</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Newsletter</h4>
+          <p class="footer-newsletter-text">Subscribe to receive monthly solar tips and local energy incentives updates.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" class="form-control" required id="newsletterEmail">
+            <button type="submit" class="btn btn-primary" id="newsletterBtn">Join</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sierra Solar Labs. All rights reserved. Locally operated in Nevada City, California.</p>
+        <p>CA Contractor License: #1084920</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
